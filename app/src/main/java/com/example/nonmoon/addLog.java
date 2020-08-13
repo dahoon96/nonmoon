@@ -17,7 +17,7 @@ public class addLog extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.DDDactivity_add_log);
+        setContentView(R.layout.activity_add_log);
 
         Button addlog = (Button)findViewById(R.id.addLog);
 
