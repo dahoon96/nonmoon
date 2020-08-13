@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class addLog extends AppCompatActivity {
+    private String confirm="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
