@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "681120163774",
+    "firebase_url": "https://nonmoon-1618f.firebaseio.com",
+    "project_id": "nonmoon-1618f",
+    "storage_bucket": "nonmoon-1618f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681120163774:android:41f308ef1c2079e894bbef",
+        "android_client_info": {
+          "package_name": "com.example.nonmoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681120163774-roouh0pjrirkd2kug9m31gsf0svouqos.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nonmoon",
+            "certificate_hash": "f8f39a92cf881f68b30cb55943147d87847a927b"
+          }
+        },
+        {
+          "client_id": "681120163774-2nid4k9jfsvo05eui0irng1m3v7i7k9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nonmoon",
+            "certificate_hash": "1fa1bfbc8facf1e79de3d5753262d59ac8df03fb"
+          }
+        },
+        {
+          "client_id": "681120163774-puhq7rcgig8hpefku6e1kv85n92aadlk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvRcSBS_DJB0miORy3Yg1Enp7o1s7tcW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681120163774-puhq7rcgig8hpefku6e1kv85n92aadlk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
