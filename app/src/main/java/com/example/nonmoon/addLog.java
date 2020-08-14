@@ -50,8 +50,10 @@ public class addLog extends AppCompatActivity implements View.OnClickListener {
             confirm = 1;
         if(!pw.getText().toString().equals(pw2.getText().toString()))
             confirm = 2;
+        if(pw.getText().toString().length()<=5)
+            confirm = 3;
         if(confirm==0) {
-            mAuth.createUserWithEmailAndPassword(id.getText().toString(), pw.getText().toString())
+            mAuth.createUserWithEmailAndPassword(id.getText().toString()+"@hs.ac.kr", pw.getText().toString())
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -65,6 +67,8 @@ public class addLog extends AppCompatActivity implements View.OnClickListener {
                                     userMap.put(FirebaseID.password, pw.getText().toString());
                                     userMap.put(FirebaseID.mobileNo, phonenumber.getText().toString());
                                     mStore.collection(FirebaseID.user).document(user.getUid()).set(userMap, SetOptions.merge());
+                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                    startActivity(intent);
                                     finish();
                                 }
                             } else {
@@ -80,6 +84,10 @@ public class addLog extends AppCompatActivity implements View.OnClickListener {
         }
         else if(confirm == 2){
             Toast.makeText(getApplicationContext(), "패스워드 두개가 다릅니다.",
+                    Toast.LENGTH_SHORT).show();
+        }
+        else if(confirm == 3){
+            Toast.makeText(getApplicationContext(), "패스워드를 6자 이상으로 입력해주세요.",
                     Toast.LENGTH_SHORT).show();
         }
     }
